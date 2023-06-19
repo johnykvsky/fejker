@@ -17,11 +17,6 @@
       <directory suffix="Test.php">./test/Fejker</directory>
     </testsuite>
   </testsuites>
-    <coverage>
-        <report>
-            <html outputDirectory="coverage" lowUpperBound="95" highLowerBound="100"/>
-        </report>
-    </coverage>
   <source>
     <include>
       <directory suffix=".php">./src/Fejker</directory>
