@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd" 
+  bootstrap="vendor/autoload.php" 
+  colors="true" 
+  columns="max" 
+  processIsolation="false" 
+  stopOnFailure="false" 
+  cacheDirectory=".phpunit.cache"
+  >
+  <php>
+    <env name="SYMFONY_DEPRECATIONS_HELPER" value="max[self]=0"/>
+  </php>
+  <testsuites>
+    <testsuite name="Fejker Test Suite">
+      <directory suffix="Test.php">./test/Fejker</directory>
+    </testsuite>
+  </testsuites>
+    <coverage>
+        <report>
+            <html outputDirectory="coverage" lowUpperBound="95" highLowerBound="100"/>
+        </report>
+    </coverage>
+  <source>
+    <include>
+      <directory suffix=".php">./src/Fejker</directory>
+    </include>
+  </source>
+
+</phpunit>
